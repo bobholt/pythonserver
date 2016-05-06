@@ -49,6 +49,7 @@ apt_packages:
   - python-dev
   - python-virtualenv
   - python-setuptools
+  - sqlite3
   - unattended-upgrades
 
 ############

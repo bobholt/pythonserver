@@ -1,2 +1,10 @@
 - name: Create flask config
   template: src=flask_config.py dest={{site_path}} backup=no
+
+- name: Create flask db
+  shell: sqlite3 /tmp/flask.db < schema.sql
+  args:
+    chdir: "{{site_path}}/{{project_name}}"
+
+- name: Make db writable
+  file: path=/tmp/flask.db owner=www-data group=www-data mode=0600

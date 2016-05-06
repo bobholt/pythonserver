@@ -1,5 +1,5 @@
 # configuration
-DATABASE = '/tmp/flaskr.db'
+DATABASE = '/tmp/flask.db'
 DEBUG = False
 TESTING = False
 SECRET_KEY = 'development key'
