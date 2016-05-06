@@ -1,0 +1,5 @@
+- name: link vagrant synced directory to make it live
+  file: path={{site_path}} state=link src={{synced_folder}} force=yes
+
+- name: install local pip libraries
+  pip: chdir="{{site_path}}" requirements=requirements.txt
