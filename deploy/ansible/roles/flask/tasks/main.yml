@@ -1,0 +1,2 @@
+- name: Create flask config
+  template: src=flask_config.py dest={{site_path}} backup=no

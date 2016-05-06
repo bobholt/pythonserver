@@ -10,4 +10,5 @@
   become_method: sudo
   roles:
     - {role: vagrant, tags: vagrant}
+    - {role: flask, tags: flask}
     - {role: uwsgi, tags: uwsgi}
